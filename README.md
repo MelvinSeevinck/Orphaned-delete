@@ -25,15 +25,10 @@ PowerShell
 
 | where type =~ 'microsoft.azurearcdata/sqlmanagedinstances'
 With:
-
-PowerShell
-
 | where type =~ 'microsoft.compute/virtualmachines'
 Or:
-
-PowerShell
-
 | where type =~ 'microsoft.storage/storageaccounts'
+
 Ensure you validate the query results before deletion to prevent accidental removal of active resources.
 
 Warning
