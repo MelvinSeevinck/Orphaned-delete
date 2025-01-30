@@ -24,9 +24,13 @@ For example, to find orphaned virtual machines or storage accounts, replace:
 PowerShell
 
 | where type =~ 'microsoft.azurearcdata/sqlmanagedinstances'
+
 With:
+
 | where type =~ 'microsoft.compute/virtualmachines'
+
 Or:
+
 | where type =~ 'microsoft.storage/storageaccounts'
 
 Ensure you validate the query results before deletion to prevent accidental removal of active resources.
